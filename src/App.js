@@ -30,9 +30,9 @@ class App extends Component {
   };
 
   onLeaveFeedback = (event) => {
-    const { value } = event.currentTarget;
+    const { name } = event.currentTarget;
     this.setState((prevState) => {
-      return { [value]: prevState[value] + 1 };
+      return { [name]: prevState[name] + 1 };
     });
   };
 
